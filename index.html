@@ -28,8 +28,11 @@ function updateclock(){
 
     const daysName = days[now.getDay()];
     const MonthName = Month[now.getDay()];
-  
-
+    const date = now.getDate();
+    const year = now.getfullyear();
+    
+    const dateString = daysName + ',' + monthName + ',' + date + ',' + year;
+    console.log(dateString);
 }
     </script>
 </body>
