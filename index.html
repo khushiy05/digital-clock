@@ -8,6 +8,11 @@
         body {
             background-color: #121212;
             margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
     .clock-container {
         display: flex;
@@ -43,9 +48,9 @@
 <body>
     <div class="clock-container">
         <div class="clock" id="clock">
-            <span id="hour">00</span>
-            <span id="minute">00</span>
-            <span id="second">00</span>
+            <span id="Hours">00</span>
+            <span id="Minute">00</span>
+            <span id="Second">00</span>
         </div>
         <div class="labels">
             <span>Hours</span>
@@ -64,6 +69,12 @@
     let minutes = now.getMinutes();
     let seconds =now.getSeconds();
      
+
+    document.getElementById('Hours').innerHTML = Hourstring;
+
+    document.getElementById('Minute').innerHTML = dateString;
+
+    document.getElementById('Second').innerHTML = SecondString;
     const timestring = hours + ':' + minutes + ':' + seconds;
     
 
@@ -77,9 +88,6 @@
     
     const dateString = daysName + ',' + MonthName + ',' + date + ',' + year;
     
-    document.getElementById('time').innerHTML = timestring;
-
-    document.getElementById('date').innerHTML = dateString;
 }
     updateclock();
 
