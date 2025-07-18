@@ -13,7 +13,7 @@
 </head>
 <body>
     <script>
-function updateclock(){
+    function updateclock(){
     const now = new Date();
 
     let hours = now.getHours();
@@ -27,9 +27,9 @@ function updateclock(){
     const months = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
 
     const daysName = days[now.getDay()];
-    const MonthName = Month[now.getDay()];
+    const MonthName = months[now.getMonth()];
     const date = now.getDate();
-    const year = now.getfullyear();
+    const year = now.getFullYear();
     
     const dateString = daysName + ',' + monthName + ',' + date + ',' + year;
     console.log(timestring);
