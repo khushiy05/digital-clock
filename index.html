@@ -23,7 +23,7 @@
     const timestring = hours + ':' + minutes + ':' + seconds;
     
 
-    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Satureday'];
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const months = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
 
     const daysName = days[now.getDay()];
@@ -31,8 +31,13 @@
     const date = now.getDate();
     const year = now.getFullYear();
     
-    const dateString = daysName + ',' + monthName + ',' + date + ',' + year;
+    const dateString = daysName + ',' + MonthName + ',' + date + ',' + year;
     console.log(timestring);
+
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    const months = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+
+    
 }
     updateclock();
     </script>
