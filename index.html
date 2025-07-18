@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIGITAL CLOCK</title>
-    <style>
-        body {
-            background-color: #121212;
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
+    <div>
+        <h1>TIME: <span id="time">00:00:00</span><h1>
+        <h1>DATE: <span id="date">LOADING</span></h1>
+    </div>
+        
     <script>
     function updateclock(){
     const now = new Date();
@@ -32,9 +31,10 @@
     const year = now.getFullYear();
     
     const dateString = daysName + ',' + MonthName + ',' + date + ',' + year;
-    console.log(timestring);
-    console.log(dateString);
+    
+    document.getElementById('time').innerHTML = timestring;
 
+    document.getElementById('date').innerHTML = dateString;
 }
     updateclock();
     </script>
